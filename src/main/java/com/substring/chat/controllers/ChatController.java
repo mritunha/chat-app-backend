@@ -17,7 +17,7 @@ import com.substring.chat.playload.MessageRequest;
 import com.substring.chat.repositories.RoomRepository;
 
 @Controller
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin(AppConstants.FRONTEND_BASE_URL)
 public class ChatController {
 
 

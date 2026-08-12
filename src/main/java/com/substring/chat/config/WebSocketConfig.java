@@ -23,7 +23,7 @@ public void configureMessageBroker(MessageBrokerRegistry config) {
 public void registerStompEndpoints(StompEndpointRegistry registry) {
     // people will subscribe to the chat endpoint to receive the messages from the server
   registry.addEndpoint("/chat")
-    .setAllowedOrigins("http://localhost:5173")
+    .setAllowedOrigins(AppConstants.FRONTEND_BASE_URL)
     .withSockJS();// it will enables fallback of sopjs
     
 }
